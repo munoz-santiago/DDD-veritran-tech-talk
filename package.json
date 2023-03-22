@@ -1,0 +1,30 @@
+{
+  "name": "ddd-veritran-tech-talk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/munoz-santiago/DDD-veritran-tech-talk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/munoz-santiago/DDD-veritran-tech-talk/issues"
+  },
+  "homepage": "https://github.com/munoz-santiago/DDD-veritran-tech-talk#readme",
+  "aliases": {
+    "@": "src/"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.21"
+  }
+}
