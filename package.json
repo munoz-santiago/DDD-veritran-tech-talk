@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/munoz-santiago/DDD-veritran-tech-talk#readme",
   "aliases": {
-    "@": "src/"
+    "src": "src/",
+    "@": "bounded_context/"
   },
   "dependencies": {
     "express": "^4.18.2",

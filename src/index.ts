@@ -1,4 +1,4 @@
-import Bootstrapper from "./infrastructure/bootstrapper";
+import Bootstrapper from "./bootstrapper";
 
 const bootstrapper = new Bootstrapper();
 bootstrapper.init()
