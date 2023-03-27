@@ -1,8 +1,8 @@
 
 export default class Percentage {
-    private _value: string;
+    private _value: number;
 
-    constructor (value: string) {
+    constructor (value: number) {
         this.validate(value);
         this._value = value;
     }
@@ -11,8 +11,7 @@ export default class Percentage {
         return this._value;
     }
 
-    private validate(value: string) {
-        // TODO: Valudate if the sent value is a valid
-        // Si es un número entre cero y 100
+    private validate(value: number) {
+        if (value < 0 || value > 100) throw new Error('Sent percentage value is not valid');
     }
 }

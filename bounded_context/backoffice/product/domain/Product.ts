@@ -4,8 +4,10 @@ import CurrencyValue from '@/shared/domain/value_objects/CurrencyValue';
 import ProductName from './value_objects/ProductName';
 import ProductDescription from './value_objects/ProductDescription';
 import StockTotal from './value_objects/StockTotal';
+import ProductId from './value_objects/ProductId';
 
 interface Props {
+    id: ProductId;
     name: ProductName;
     description: ProductDescription;
     basePrice: CurrencyValue;
@@ -14,13 +16,15 @@ interface Props {
 }
 
 export default class Product {
+    private _id: ProductId;
     private _name: ProductName;
     private _description: ProductDescription;
     private _basePrice: CurrencyValue;
     private _ivaPercentage: Percentage;
     private _stock: StockTotal;
 
-    constructor({ name, description, basePrice, ivaPercentage, stock }: Props) {
+    constructor({ id, name, description, basePrice, ivaPercentage, stock }: Props) {
+        this._id = id;
         this._name = name;
         this._description = description;
         this._basePrice = basePrice;
@@ -28,6 +32,10 @@ export default class Product {
         this._stock = stock;
     }
     
+    id() {
+        return this._id;
+    }
+
     name() {
         return this._name;
     }
