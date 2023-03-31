@@ -8,6 +8,7 @@ import ProductName from '../domain/value_objects/ProductName';
 import ProductDescription from '../domain/value_objects/ProductDescription';
 import StockTotal from '../domain/value_objects/StockTotal';
 import ProductId from '../domain/value_objects/ProductId';
+import EventBus from '@/shared/domain/EventBus';
 
 interface CreateProductProps {
     id: string;
@@ -19,7 +20,7 @@ interface CreateProductProps {
 }
 
 class CreateProduct {
-    constructor(private productRepo: ProductRepository) { }
+    constructor(private productRepo: ProductRepository, private eventBus: EventBus) { }
     
     execute({ id, name, description, basePrice, ivaPercentage, stock = 0 }: CreateProductProps) {
         const productId = new ProductId(id);
@@ -29,7 +30,7 @@ class CreateProduct {
         const ivaPercentageVO = new Percentage(ivaPercentage);
         const stockVO = new StockTotal(stock);
 
-        const product = new Product({
+        const product = Product.create({
             id: productId,
             name: nameVO,
             description: descriptionVO,
@@ -38,7 +39,8 @@ class CreateProduct {
             stock: stockVO,
         });
 
-        this.productRepo.create(product);
+        this.productRepo.save(product);
+        this.eventBus.publish(product.pullDomainEvents())
     }
 }
 
