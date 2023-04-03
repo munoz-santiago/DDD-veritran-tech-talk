@@ -45,7 +45,6 @@ export default class Product extends AggregateRoot {
             stock: stock,
         });
 
-
         const event = new ProductCreatedEvent(product.id().value(), product.toPrimitives())
         product.record(event)
 
