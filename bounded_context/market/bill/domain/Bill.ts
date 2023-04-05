@@ -23,7 +23,6 @@ interface Props {
 export default class Bill {
     private _user: User;
     private _products: Product[];
-    private _deliveryType: DeliveryType;
     private _id: BillID;
     private _address: Address;
     private _precioBruto: CurrencyValue;
