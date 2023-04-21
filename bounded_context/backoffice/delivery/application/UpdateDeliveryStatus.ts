@@ -1,5 +1,5 @@
-import DeliveryRepository from "@/backoffice/delivery/domain/DeliveryRepository";
-import EventBus from "@/shared/domain/EventBus";
+import DeliveryRepository from "@/backoffice/delivery/domain/repositories/DeliveryRepository";
+import EventBus from "bounded_context/domain/EventBus";
 import DeliveryId from "@/backoffice/delivery/domain/value_objects/DeliveryId";
 import DeliveryStatus from "@/backoffice/delivery/domain/value_objects/DeliveryStatus";
 

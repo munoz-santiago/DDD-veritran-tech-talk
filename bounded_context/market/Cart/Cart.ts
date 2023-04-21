@@ -1,5 +1,5 @@
-import AggregateRoot from '@/shared/domain/AggregateRoot';
-import CurrencyValue from '@/shared/domain/value_objects/CurrencyValue';
+import AggregateRoot from bounded_contextsshared/domain/AggregateRoot';
+import CurrencyValue from bounded_contextsshared/domain/value_objects/CurrencyValue';
 import Product from '../product/domain/Product';
 import CartItem from './CartItem';
 import ProductItemTotal from './domain/value_objects/ProductItemTotal';

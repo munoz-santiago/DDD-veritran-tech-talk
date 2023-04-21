@@ -1,5 +1,5 @@
-import ProductRepository from '@/market/product/domain/ProductRepository';
-import CurrencyValue from '@/shared/domain/value_objects/CurrencyValue';
+import ProductRepository from bounded_contextsmarket/product/domain/ProductRepository';
+import CurrencyValue from bounded_contextsshared/domain/value_objects/CurrencyValue';
 import CartRepository from '../domain/CartRepository';
 import Cart from '../Cart';
 

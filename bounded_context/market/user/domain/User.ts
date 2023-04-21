@@ -1,5 +1,5 @@
-import Email from '@/shared/domain/value_objects/Email';
-import Password from '@/shared/domain/value_objects/Password';
+import Email from bounded_contextsshared/domain/value_objects/Email';
+import Password from bounded_contextsshared/domain/value_objects/Password';
 
 import FullName from './value_objects/FullName';
 

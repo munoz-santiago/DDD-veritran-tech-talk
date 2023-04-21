@@ -1,4 +1,4 @@
-import CurrencyValue from '@/shared/domain/value_objects/CurrencyValue';
+import CurrencyValue from bounded_contextsshared/domain/value_objects/CurrencyValue';
 
 import ProductCalification from './value_objects/ProductCalification';
 import ProductName from './value_objects/ProductName';

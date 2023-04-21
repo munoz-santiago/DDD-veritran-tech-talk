@@ -1,5 +1,5 @@
-import Percentage from '@/shared/domain/value_objects/Percentage';
-import CurrencyValue from '@/shared/domain/value_objects/CurrencyValue';
+import Percentage from '../../../shared/domain/value_objects/Percentage';
+import CurrencyValue from '../../../shared/domain/value_objects/CurrencyValue';
 
 import ProductRepository from '../domain/ProductRepository';
 import Product from '../domain/Product';
@@ -8,7 +8,7 @@ import ProductName from '../domain/value_objects/ProductName';
 import ProductDescription from '../domain/value_objects/ProductDescription';
 import StockTotal from '../domain/value_objects/StockTotal';
 import ProductId from '../domain/value_objects/ProductId';
-import EventBus from '@/shared/domain/EventBus';
+import EventBus from '../../../shared/domain/EventBus';
 
 interface CreateProductProps {
     id: string;

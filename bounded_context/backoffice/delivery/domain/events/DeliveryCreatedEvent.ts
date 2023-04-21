@@ -1,4 +1,4 @@
-import DomainEvent from "@/shared/domain/DomainEvent";
+import DomainEvent from "bounded_context/domain/DomainEvent";
 import Delivery from "../Delivery";
 
 export default class DeliveryCreatedEvent extends DomainEvent {

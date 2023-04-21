@@ -1,10 +1,13 @@
-import DomainEvent from "@/shared/domain/DomainEvent";
+import DomainEvent from '../../../../shared/domain/DomainEvent';
 
 type ProductCreatedData = {}
 
 class ProductCreatedEvent extends DomainEvent {
-    eventName = "backoffice.product.created";
-    data: ProductCreatedData;
+    protected _eventName: string =  'backoffice.product.created';
+
+    constructor(aggregateId: string, data: ProductCreatedData) {
+        super(aggregateId, data);
+    }
 }
 
-export default ProductCreatedEvent
+export default ProductCreatedEvent;

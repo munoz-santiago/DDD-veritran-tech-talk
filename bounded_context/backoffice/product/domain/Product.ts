@@ -1,11 +1,11 @@
-import Percentage from '@/shared/domain/value_objects/Percentage';
-import CurrencyValue from '@/shared/domain/value_objects/CurrencyValue';
+import Percentage from 'bounded_context/shared/domain/value_objects/Percentage';
+import CurrencyValue from 'bounded_context/shared/domain/value_objects/CurrencyValue';
 
 import ProductName from './value_objects/ProductName';
 import ProductDescription from './value_objects/ProductDescription';
 import StockTotal from './value_objects/StockTotal';
 import ProductId from './value_objects/ProductId';
-import AggregateRoot from '@/shared/domain/AggregateRoot';
+import AggregateRoot from '../../../shared/domain/AggregateRoot';
 import ProductCreatedEvent from './events/ProductCreatedEvent';
 
 interface Props {

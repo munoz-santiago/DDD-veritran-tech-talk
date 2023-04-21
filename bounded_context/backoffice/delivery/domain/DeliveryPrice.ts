@@ -1,5 +1,5 @@
 
-import CurrencyValue from '@/shared/domain/value_objects/CurrencyValue';
+import CurrencyValue from bounded_contextsshared/domain/value_objects/CurrencyValue';
 import DeliveryType from './value_objects/DeliveryType';
 
 interface Props {

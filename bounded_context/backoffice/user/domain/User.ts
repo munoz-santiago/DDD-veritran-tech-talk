@@ -1,4 +1,4 @@
-import Email from '@/shared/domain/value_objects/Email';
+import Email from bounded_contextsshared/domain/value_objects/Email';
 import FullName from './value_objects/FullName';
 
 interface Props {

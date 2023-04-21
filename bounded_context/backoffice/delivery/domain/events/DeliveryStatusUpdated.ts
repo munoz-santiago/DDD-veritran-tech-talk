@@ -1,4 +1,4 @@
-import DomainEvent from "@/shared/domain/DomainEvent";
+import DomainEvent from "bounded_context/domain/DomainEvent";
 import DeliveryId from "@/backoffice/delivery/domain/value_objects/DeliveryId";
 import DeliveryStatus from "@/backoffice/delivery/domain/value_objects/DeliveryStatus";
 

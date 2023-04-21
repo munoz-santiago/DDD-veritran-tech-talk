@@ -19,10 +19,11 @@
   "homepage": "https://github.com/munoz-santiago/DDD-veritran-tech-talk#readme",
   "aliases": {
     "src": "src/",
-    "@": "bounded_context/"
+    "bounded_context": "'bounded_context/"
   },
   "dependencies": {
     "express": "^4.18.2",
+    "redis": "4.6.4",
     "ts-node": "^10.9.1",
     "uuid": "^9.0.0"
   },

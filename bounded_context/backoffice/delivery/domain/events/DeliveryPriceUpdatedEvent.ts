@@ -1,6 +1,6 @@
-import DomainEvent from "@/shared/domain/DomainEvent";
+import DomainEvent from "bounded_context/domain/DomainEvent";
 import DeliveryType from "../value_objects/DeliveryType";
-import CurrencyValue from "@/shared/domain/value_objects/CurrencyValue";
+import CurrencyValue from "bounded_context/domain/value_objects/CurrencyValue";
 
 export default class DeliveryPriceUpdatedEvent extends DomainEvent {
     eventName = "backoffice.delivery.price.updated"

@@ -1,5 +1,5 @@
 const pingView = (req, res) => {
-    res.send({ ok: 'Ok' });
+    res.send('pong');
 };
 
 export default pingView;

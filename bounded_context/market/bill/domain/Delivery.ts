@@ -1,4 +1,4 @@
-import Address from "@/shared/domain/value_objects/Address";
+import Address from "bounded_context/domain/value_objects/Address";
 import BillID from "./value_objects/BillID";
 import DeliveryType from "./value_objects/DeliveryType";
 

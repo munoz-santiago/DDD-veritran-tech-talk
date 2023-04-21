@@ -2,7 +2,7 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
-            "@/*": ["bounded_context/*"],
+            "@/*": ["'bounded_context/*"],
             "src/*": ["src/*"],
         }
     }

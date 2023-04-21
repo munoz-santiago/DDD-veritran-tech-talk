@@ -1,5 +1,5 @@
-import CurrencyValue from '@/shared/domain/value_objects/CurrencyValue';
-import Address from '@/shared/domain/value_objects/Address';
+import CurrencyValue from bounded_contextsshared/domain/value_objects/CurrencyValue';
+import Address from bounded_contextsshared/domain/value_objects/Address';
 
 import User from '../../user/domain/User';
 import Product from '../../product/domain/Product';

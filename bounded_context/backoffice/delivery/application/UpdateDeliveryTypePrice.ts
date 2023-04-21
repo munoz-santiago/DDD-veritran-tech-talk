@@ -1,8 +1,8 @@
-import EventBus from '@/shared/domain/EventBus';
-import DeliveryRepository from '../domain/DeliveryRepository';
+import EventBus from bounded_contextsshared/domain/EventBus';
+import DeliveryRepository from '../domain/repositories/DeliveryRepository';
 import DeliveryPriceUpdatedEvent from '../domain/events/DeliveryPriceUpdatedEvent';
 import DeliveryType from '../domain/value_objects/DeliveryType';
-import CurrencyValue from "@/shared/domain/value_objects/CurrencyValue";
+import CurrencyValue from "bounded_context/domain/value_objects/CurrencyValue";
 
 export default class UpdateDeliveryTypePrice {
     constructor(private deliveryRepository: DeliveryRepository, private eventBus: EventBus ) {}
